@@ -21,4 +21,11 @@ def random_charatcer():
         response = requests.get(url)
         word = respond.json()[0]
         return word
+
+    def generate_weaker_password():
+        word1 = fetch_word()
+        word2 = fetch()
+        password = word1 + word2
+        return password
+        
     print(ferch_word())
